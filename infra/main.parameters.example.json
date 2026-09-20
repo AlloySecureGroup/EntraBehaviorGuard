@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "prefix": { "value": "ebg" },
+    "bakeInDays": { "value": 14 },
+    "minBaselineEvents": { "value": 25 },
+    "alertScoreThreshold": { "value": 45 },
+    "enforcementScoreThreshold": { "value": 80 },
+    "enforcementEnabled": { "value": false },
+    "enforcementAction": { "value": "revokeSessions" },
+    "enableBetaNonInteractive": { "value": false },
+    "protectedUpns": { "value": "breakglass1@contoso.com,breakglass2@contoso.com" }
+  }
+}
